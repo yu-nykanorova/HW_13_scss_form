@@ -1,0 +1,17 @@
+html, body {
+    min-height: 100%;
+}
+
+body {
+    font-family: $ff;
+    background: var(--bodyBg);
+    height: 100vh;
+    display: grid;
+    place-items: center;
+}
+
+a {
+    font-weight: 700;
+    color: #5381f8;
+}
+

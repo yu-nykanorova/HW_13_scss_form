@@ -1,0 +1,227 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+:root {
+  --bodyBg: linear-gradient(119deg, #5281f8 0%, #8c00bd 100%);
+  --formBg: #fff;
+  --btnBg: #5381f8;
+}
+
+html, body {
+  min-height: 100%;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  background: var(--bodyBg);
+  height: 100vh;
+  display: grid;
+  place-items: center;
+}
+
+a {
+  font-weight: 700;
+  color: #5381f8;
+}
+
+.form {
+  background: var(--formBg);
+  padding: 87px 70px 80px;
+  max-width: 546px;
+  border-radius: 8px;
+  margin-inline: auto;
+  text-align: center;
+}
+@media (max-width: 592px) {
+  .form {
+    padding: 30px;
+    width: 100%;
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+.form__title {
+  font-weight: 700;
+  font-size: 33px;
+  color: #03014c;
+  margin-bottom: 12px;
+}
+@media (max-width: 592px) {
+  .form__title {
+    font-size: 26px;
+  }
+}
+.form__desc {
+  font-weight: 400;
+  font-size: 13px;
+  color: #03014c;
+  margin-bottom: 60px;
+  opacity: 0.6;
+}
+@media (max-width: 592px) {
+  .form__desc {
+    margin-bottom: 10px;
+  }
+}
+.form__row {
+  margin-top: 18px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.form__forgot {
+  font-weight: 600;
+  font-size: 13px;
+  color: rgba(3, 1, 76, 0.5);
+  -webkit-transition: .2s ease-in;
+  transition: .2s ease-in;
+}
+.form__forgot:hover {
+  color: #03014c;
+}
+.form__btn {
+  margin-top: 30px;
+  margin-bottom: 32px;
+  width: 100%;
+}
+.form__sign {
+  font-weight: 400;
+  font-size: 13px;
+  color: #03014c;
+}
+
+.field {
+  display: block;
+  position: relative;
+}
+.field:first-of-type {
+  margin-bottom: 23px;
+}
+.field__input {
+  width: 100%;
+  border: 1px solid rgba(3, 1, 76, 0.6);
+  border-radius: 8px;
+  padding: 24px 24px 24px 72px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  font-size: 13px;
+  color: #03014c;
+  outline: none;
+}
+.field__input.is-password {
+  padding-right: 60px;
+}
+.field__input::-webkit-input-placeholder {
+  color: rgba(3, 1, 76, 0.6);
+}
+.field__input:-ms-input-placeholder {
+  color: rgba(3, 1, 76, 0.6);
+}
+.field__input::-ms-input-placeholder {
+  color: rgba(3, 1, 76, 0.6);
+}
+.field__input::placeholder {
+  color: rgba(3, 1, 76, 0.6);
+}
+.field__icon, .field__eye {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+.field__icon {
+  left: 33px;
+}
+.field__eye {
+  right: 38px;
+  cursor: pointer;
+}
+
+.checkbox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 13px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+}
+.checkbox__input {
+  display: none;
+}
+.checkbox__input:checked ~ .checkbox__box {
+  background: #03014c;
+  color: white;
+}
+.checkbox__box {
+  width: 14px;
+  height: 14px;
+  border: 1px solid #03014c;
+  border-radius: 50%;
+  color: rgba(255, 255, 255, 0);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 12px;
+  -webkit-transition: .2s all ease-in;
+  transition: .2s all ease-in;
+}
+.checkbox__label {
+  font-weight: 600;
+  font-size: 13px;
+  color: rgba(3, 1, 76, 0.6);
+}
+
+.btn {
+  display: inline-block;
+  border: 0;
+  outline: 0;
+  cursor: pointer;
+  background: var(--btnBg);
+  border-radius: 8px;
+  padding: 23px 46px;
+  font-weight: 600;
+  font-size: 14px;
+  color: #fff;
+}
+.btn:hover {
+  background: #225df6;
+}
